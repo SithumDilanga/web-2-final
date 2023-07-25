@@ -1,0 +1,138 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="(min-width: 640px)" href="all_pc.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="all_smp.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="flexslider.css" rel="stylesheet">
+<link href="css/shop.css" rel="stylesheet">
+<script src="jquery.flexslider-min.js"></script>
+<script>
+  $(function(){
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+
+
+	var item=["Please input your name.","Please input your age.","Please input your telephone number","Please input your email."];
+
+	function check(){
+		var elem =document.fm.elements;
+		for(var i=0;i<4;i++){
+			if(elem[i].value !=""){
+				elem[i].style.color="#0000FF";
+				switch(elem[i].name){
+					case "age":			
+						if(isNaN(elem[i].value)){
+							alert("Please input correct age.");
+							elem[i].style.color="#FF0000";
+						}else if(elem[i].value<0){
+							elem[i].style.color="#FF0000";
+							alert("You did not input the correct numbers.");
+						}
+						break;
+					
+					case "tel":
+						if(!elem[i].value.match(/^\d{2,3}-\d{4}-\d{4}$/)){
+							elem[i].style.color="#FF0000";
+							alert("Please input correct telephone number");
+						}
+					break;
+					
+					case "mail":
+						if(!elem[i].value.match(/^\S+@\S+\.\S+$/)){
+							elem[i].style.color="#FF0000";
+							alert("Please input correct e-mail number.");
+						}
+					break;
+				}
+			}else{
+				alert(item[i]);
+			}
+		}
+	}
+
+	function loadOtherPage() {
+      var iframe = document.createElement("object");
+      iframe.setAttribute("data", "score2.html");
+      iframe.setAttribute("type", "text/html");
+      iframe.setAttribute("width", "100%");
+      iframe.setAttribute("height", "500px");
+      document.getElementById("content").appendChild(iframe);
+  }
+
+	
+</script>
+
+</head>
+
+<body style="background-image:url(img/background.jpg);">
+
+<div id="pagebody" style="height: 1200px;">
+	<header>
+	<div class="flexslider" style="border-color:#CFC;;">
+      <ul class="slides">
+        <li><img src="img/1.jpg" /></li>
+        <li><img src="img/2.jpg" /></li>
+        <li><img src="img/3.jpg" /></li>
+        <li><img src="img/4.jpg" /></li>
+        <li><img src="img/5.jpg" /></li>
+        <li><img src="img/6.jpg" /></li>
+        <li><img src="img/7.jpg" /></li>
+        <li><img src="img/8.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="topnav">
+    	<div class="topnavde"><a href="index.html"><b>Top page</b></a></div>
+			<div class="topnavde"><a href="score.html"><b>Score</b></a></div>
+			<div class="topnavde"><a href="shop.html"><b>Shop</b></a></div>
+			<div class="topnavde"><a href="jsworld.html"><b>JS World</b></a></div>
+			<div class="topnavde"><a href="form.html"><b>Form</b></a></div>
+			<div class="topnavde"><a href="map.html"><b>Map</b></a></div>
+			<div class="topnavde"><a href="anim.html"><b>Anima</b></a></div>
+    </div>
+    
+	</header>
+
+  <div class="mainBody">
+    <!-- first grid -->
+    <div class="cardView1">
+      <div class="cardContainer">
+        <div class="leftSideItems">
+
+          <div class="leftItem">
+            <img class="leftItemImg" src="https://i.pinimg.com/originals/f0/3a/cb/f03acb35dbd392237899516297cdbcd5.jpg" width="75px" height="150px" onclick="detailedImageView1('//i.pinimg.com/originals/f0/3a/cb/f03acb35dbd392237899516297cdbcd5.jpg')"/>
+          </div>
+          <div class="leftItem">
+            <img class="leftItemImg" src="https://cdn.shopify.com/s/files/1/0576/1076/4347/products/sainly-apparel-accessories-26-men-elegant-sky-blue-pant-office-formal-wear-trouser-gift-for-men-sky-blue-trousers-groomsmen-gift-men-office-pants-sky-blue-dress-pant-emerald-dress-pan_grande.png" width="75px" height="150px"  onclick=" detailedImageView1('//cdn.shopify.com/s/files/1/0576/1076/4347/products/sainly-apparel-accessories-26-men-elegant-sky-blue-pant-office-formal-wear-trouser-gift-for-men-sky-blue-trousers-groomsmen-gift-men-office-pants-sky-blue-dress-pant-emerald-dress-pan_grande.png')"/>
+          </div>
+
+          <div class="leftItem">
+            <img class="leftItemImg" src="https://i.pinimg.com/474x/6a/b1/6b/6ab16b46b946e2eccbcc082aabfc99bd.jpg" width="75px" height="150px"  onclick="detailedImageView1('//i.pinimg.com/474x/6a/b1/6b/6ab16b46b946e2eccbcc082aabfc99bd.jpg')"/>
+          </div>
+
+          <div class="leftItem">
+            <img class="leftItemImg" src="https://i.pinimg.com/236x/28/7d/0a/287d0a43f83b48cdfab366f22ee18482.jpg" width="75px" height="150px"  onclick="detailedImageView1('//i.pinimg.com/236x/28/7d/0a/287d0a43f83b48cdfab366f22ee18482.jpg')"/>
+          </div>
+        </div>
+        <div id="descRightSide">
+          <img id="firstDetailedItem" src="https://i.pinimg.com/originals/f0/3a/cb/f03acb35dbd392237899516297cdbcd5.jpg" width="200px" height="310px">
+
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<footer>Copyright (C) 2018s copyrights. KCGI.All Rights Reserved.</footer>
+</div>
+
+<script type="text/javascript" src="js/shop.js"></script>
+
+</body>
+</html>

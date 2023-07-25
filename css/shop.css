@@ -1,0 +1,46 @@
+.mainBody {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardView1 {
+  box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: black;
+  height: 350px;
+}
+
+.cardContainer {
+  display: flex;
+  padding: 16px;
+  gap: 8px;
+}
+
+.leftSideItems {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+.leftItem {
+  transition: 0.3s;
+  /* border-radius: 8px; */
+}
+
+.leftItem:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1);
+}
+
+.leftItemImg {
+  border-radius: 8px;
+}
+
+.topnav {
+  background-color: #0072CE;
+}
+
+.topnavde {
+  border-radius: 8px;
+}

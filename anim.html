@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="(min-width: 640px)" href="all_pc.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="all_smp.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="flexslider.css" rel="stylesheet">
+<link href="css/map.css" rel="stylesheet">
+<script src="jquery.flexslider-min.js"></script>
+</head>
+
+<body onload="moveImgX()" style="background-image:url(img/background.jpg);">
+
+<div id="pagebody" style="height: auto;">
+	<header>
+	<div class="flexslider" style="border-color:#CFC;;">
+      <ul class="slides">
+        <li><img src="img/1.jpg" /></li>
+        <li><img src="img/2.jpg" /></li>
+        <li><img src="img/3.jpg" /></li>
+        <li><img src="img/4.jpg" /></li>
+        <li><img src="img/5.jpg" /></li>
+        <li><img src="img/6.jpg" /></li>
+        <li><img src="img/7.jpg" /></li>
+        <li><img src="img/8.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="topnav">
+    	<div class="topnavde"><a href="index.html"><b>Top page</b></a></div>
+			<div class="topnavde"><a href="score.html"><b>Score</b></a></div>
+			<div class="topnavde"><a href="shop.html"><b>Shop</b></a></div>
+			<div class="topnavde"><a href="jsworld.html"><b>JS World</b></a></div>
+			<div class="topnavde"><a href="form.html"><b>Form</b></a></div>
+			<div class="topnavde"><a href="map.html"><b>Map</b></a></div>
+			<div class="topnavde"><a href="anim.html"><b>Anima</b></a></div>
+    </div>
+    
+	</header>
+  <div style="padding-bottom: 140px;">
+    <h1 style="text-align:center;">Moving object</h1>
+    
+    <img src="https://cdn.pixabay.com/animation/2023/01/20/04/27/04-27-57-299_512.gif" width="auto" height="100" id="img1" style="position:absolute;">
+  </div>
+
+	
+	<footer>Copyright (C) 2018s copyrights. KCGI.All Rights Reserved.</footer>
+</div>
+
+<script type="text/javascript" src="js/anim.js"></script>
+
+</body>
+</html>

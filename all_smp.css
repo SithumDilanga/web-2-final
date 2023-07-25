@@ -1,0 +1,116 @@
+@media print, screen and (max-width: 640px) {
+
+	body{
+		text-align:center;
+	}
+
+	img {
+		max-width : 100% ;
+		height : auto ;
+	} 
+
+	#pagebody{
+		width:99%;
+		height:auto;
+		margin:0 auto;
+		padding:1%;
+		background-color: lightcyan;
+	}
+
+	header{
+		width:94%;
+		height:500px;
+		margin:5px;
+		padding:5px;
+		border:2px solid pink;
+		background-color: #CFC;
+	}
+
+	.topnav{
+		width:98%;
+		height:58%;
+		border:2px solid pink;
+		background-color: green;
+	}
+
+	.topnavde{
+		display: block;
+		width:93%;
+		height:22px;
+		margin:5px;
+		padding:5px;
+		border:2px solid pink;
+		background-color: lightcyan;
+		font-size: 120$;
+	}
+
+	.topnavde a:hover{
+		width:90px;
+		height: 22px;
+		background-color:lightpink;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	p{
+		font-size: 120%;
+	}
+
+	.container{
+		width: 94%;
+		height: auto;
+		margin: 5px;
+		padding: 5px;
+		border: 2px solid pink;
+		background-color: #CFC;
+		text-align: left;
+	}
+
+	#submenu{
+		width:18%;
+		height:auto;
+		margin:1%;
+		border:2px solid pink;
+		float:left;
+		background-color:lightgreen;	
+	}
+
+	#content{
+		width:72%;
+		margin: 1%;
+		padding: 1%;
+		border:2px solid pink;
+		float: right;
+		background-color: mistyrose;
+	}
+
+
+
+	footer{
+		width:94%;
+		height:50px;
+		margin:5px;
+		padding:5px;
+		border:2px solid pink;
+		background-color: #CFC;;
+	}
+
+
+
+	@keyframes mymove
+	{
+		10%  {background-color:mistyrose;}
+		50%  {background-color:greenyellow;}
+		100%  {background-color:aquamarine;}
+	}
+
+	@-webkit-keyframes mymove /* Safari and Chrome */
+	{
+		10%  {background-color:mistyrose;}
+		50%  {background-color:greenyellow;}
+		100%  {background-color:aquamarine;}
+	}
+
+}

@@ -1,0 +1,127 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="(min-width: 640px)" href="all_pc.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="all_smp.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="flexslider.css" rel="stylesheet">
+<link href="css/jsworld.css" rel="stylesheet">
+<script src="jquery.flexslider-min.js"></script>
+<!-- <script>
+  
+	
+</script> -->
+
+</head>
+
+<body style="background-image:url(img/background.jpg);">
+
+<div id="pagebody" style="height: auto;">
+	<header>
+	<div class="flexslider" style="border-color:#CFC;;">
+      <ul class="slides">
+        <li><img src="img/1.jpg" /></li>
+        <li><img src="img/2.jpg" /></li>
+        <li><img src="img/3.jpg" /></li>
+        <li><img src="img/4.jpg" /></li>
+        <li><img src="img/5.jpg" /></li>
+        <li><img src="img/6.jpg" /></li>
+        <li><img src="img/7.jpg" /></li>
+        <li><img src="img/8.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="topnav">
+    	<div class="topnavde"><a href="index.html"><b>Top page</b></a></div>
+			<div class="topnavde"><a href="score.html"><b>Score</b></a></div>
+			<div class="topnavde"><a href="shop.html"><b>Shop</b></a></div>
+			<div class="topnavde"><a href="jsworld.html"><b>JS World</b></a></div>
+			<div class="topnavde"><a href="form.html"><b>Form</b></a></div>
+			<div class="topnavde"><a href="map.html"><b>Map</b></a></div>
+			<div class="topnavde"><a href="anim.html"><b>Anima</b></a></div>
+    </div>
+    
+	</header>
+
+  <div class="row">
+    <div>
+      <form action="index.html" method="post">
+        <h1> Your Basic Info </h1>
+        
+        <fieldset>
+                  
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          <button>click the button</button>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          <button>click the button</button>
+
+          <br><br>
+          <label>Please select your favorite color</label>
+          <br>
+        
+          <input type="radio" id="under_13" name="user_color">
+          <label class="light">Red</label>
+          <br>
+          <input type="radio" id="over_13" name="user_color">
+          <label class="light">Blue</label>
+          <br>
+          <input type="radio" id="over_13" name="user_color">
+          <label class="light">Yellow</label>
+
+          <br><br>
+          <button>click the button</button>
+          <br><br>
+
+          <label>Please select the languages you can speak</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Japanese</label>
+          <br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">English</label>
+          <br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Chinese</label>
+          <br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Other</label>
+
+          <br><br>
+          <button>Choose the language you have learned</button>
+          <br><br>
+
+          <label>Choose the school</label>
+          <br>
+          <select id="school">
+            <option value="KCGI">KCGI</option>
+            <option value="Kyodai">Kyodai</option>
+            <option value="Todai">Todai</option>
+            <option value="Doshisha">Doshisha</option>
+          </select>
+          <br>
+          <label>Choose the instruments</label>
+          <br>
+          <select id="intrument">
+            <option value="guitar">Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="bass">Bass</option>
+          </select>
+
+          <br><br>
+          <button>Reset</button>
+          <br><br>
+          
+        </fieldset>
+        
+       </form>
+        </div>
+      </div>
+	
+	<footer>Copyright (C) 2018s copyrights. KCGI.All Rights Reserved.</footer>
+</div>
+
+<script type="text/javascript" src="js/jsworld.js"></script>
+
+</body>
+</html>

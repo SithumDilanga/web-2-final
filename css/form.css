@@ -1,0 +1,29 @@
+button {
+  padding: 8px;
+  color: #FFF;
+  background-color: #0072CE;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 20%;
+  border: 1px solid #3b9dee;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+table {
+  border="1";
+  width: 80%; 
+  margin: auto; 
+  background-color:#57b4ff;
+}
+
+.topnav {
+  background-color: #0072CE;
+}
+
+.topnavde {
+  border-radius: 8px;
+}
